@@ -132,7 +132,7 @@ const Navbar = () => {
               >
                 <FiX />
               </button>
-              <div className="text-white font-bold text-xl uppercase p-4 pt-10">
+              <div className="text-white font-bold text-sm uppercase p-4 pt-10">
                 <h1>Devdavix</h1>
               </div>
               <Link to="home" spy={true} smooth={true} duration={500}>
