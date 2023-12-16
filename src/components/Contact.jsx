@@ -1,0 +1,72 @@
+import React from "react";
+
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import devdavixImg from "../assets/img/contact.jpg"; // Ensure correct path
+
+const Contact = () => {
+  return (
+    <div
+      id="contact"
+      className="w-full mt-5 p-6 lg:px-20 flex items-center py-16"
+    >
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+        <div className="col-span-2">
+          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+            Contact
+          </p>
+          <h2 className="py-4 text-2xl md:text-3xl font-bold">
+            Have any Questions ?
+          </h2>
+          <div className="lg:w-auto p-5 flex flex-col">
+            <div>
+              <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+              <p className="text-lg">
+                I'm excited to hear from you! Whether you have questions or want
+                to discuss a project, feel free to reach out.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4 mt-10">
+              <a
+                href="https://twitter.com/devdavix"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
+              >
+                <FaSquareXTwitter className="text-4xl mr-2" />
+                <span>@devdavix</span>
+              </a>
+              <a
+                href="tel:+2347063583581"
+                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
+              >
+                <BsFillPersonLinesFill className="text-4xl mr-2" />
+                <span>+2347063583581</span>
+              </a>
+              <a
+                href="mailto:devdavixx@gmail.com"
+                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
+              >
+                <AiOutlineMail className="text-4xl mr-2" />
+                <span>devdavixx@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="w-400 h-300 shadow-lg shadow-gray-800 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300">
+          <img
+            className="rounded-xl"
+            src={devdavixImg}
+            alt="Devdavix"
+            width={400}
+            height={300}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
