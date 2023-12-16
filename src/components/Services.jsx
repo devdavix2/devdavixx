@@ -15,7 +15,7 @@ const Services = () => {
         </div>
 
         {/* First Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:p-auto p-10  gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:p-auto   gap-8">
           {/* First Row Service Items */}
           <ServiceItem
             icon={<FiMonitor size={40} className="text-blue-500 mb-2" />}
@@ -36,7 +36,7 @@ const Services = () => {
         </div>
 
         {/* Second Row */}
-        <div className="grid grid-cols-1  md:grid-cols-3 lg:p-auto p-20 gap-8">
+        <div className="grid grid-cols-1  md:grid-cols-3 lg:p-auto  gap-8">
           {/* Second Row Service Items */}
           <ServiceItem
             icon={<FiLayout size={40} className="text-blue-500 mb-2" />}
@@ -70,7 +70,7 @@ const Services = () => {
 
 const ServiceItem = ({ icon, title, description }) => {
   return (
-    <div className="w-full h-auto shadow-lg shadow-gray-800 rounded-xl flex flex-col  justify-center p-4 hover:scale-105 ease-in duration-300">
+    <div className="w-full h-auto shadow-lg shadow-gray-800 rounded-xl flex flex-col  justify-center p-2 hover:scale-105 ease-in duration-300">
       <div>{icon}</div>
       <h3 className="text-xl font-bold py-2">{title}</h3>
       <p className="text-gray-500">{description}</p>
