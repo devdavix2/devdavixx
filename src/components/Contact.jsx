@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full  p-20  mb-10 lg:px-20 flex items-center "
+      className="w-full  p-5  mb-10 lg:px-20 flex items-center "
     >
       <div className="w-full  md:grid grid-cols-2 gap-8">
         <div className="col-span-1">

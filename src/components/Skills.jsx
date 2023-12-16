@@ -13,7 +13,7 @@ const Skills = () => {
     <div
       id="skills"
       div
-      className="w-full mt-5 p-20 lg:px-20 flex items-center py-16"
+      className="w-full mt-5 p-5 lg:px-20 flex items-center py-16"
     >
       <div className="w-full p-10 mx-auto flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
