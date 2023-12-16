@@ -4,17 +4,17 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import devdavixImg from "../assets/img/contact.jpg"; // Ensure correct path
+import devdavixImg from "../assets/img/contact.jpg";
 
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full mt-5 p-6 lg:px-20 flex items-center py-16"
+      className="w-full  p-20  mb-10 lg:px-20 flex items-center "
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+      <div className="w-full  md:grid grid-cols-2 gap-8">
+        <div className="col-span-1">
+          <p className="uppercase text-xl mb-10 tracking-widest text-[#5651e5]">
             Contact
           </p>
           <h2 className="py-4 text-2xl md:text-3xl font-bold">
@@ -55,14 +55,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-400 h-300 shadow-lg shadow-gray-800 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300">
-          <img
-            className="rounded-xl"
-            src={devdavixImg}
-            alt="Devdavix"
-            width={400}
-            height={300}
-          />
+        <div className="w-full h-full col-span-1 shadow-lg mt-10 rounded-xl flex items-center justify-center  hover:scale-105 ease-in duration-300">
+          <img className="rounded-xl" src={devdavixImg} alt="Devdavix" />
         </div>
       </div>
     </div>

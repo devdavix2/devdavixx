@@ -7,7 +7,7 @@ import dfoodsImage from "../assets/images/devdavix.png";
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // Optional: Adds smooth scrolling behavior
+    behavior: "smooth",
   });
 };
 
@@ -26,7 +26,6 @@ const Projects = () => {
           Explore my project{" "}
         </h2>
         <div className="p-2 lg:p-20 lg:grid lg:grid-cols-3 lg:gap-4">
-          {/* Projects in columns on small screens and in rows on larger screens */}
           <div className="flex flex-col justify-center shadow-lg shadow-gray-800  items-center mb-4 p-4 rounded-md lg:col-span-1 lg:gap-4">
             <div className="mb-2 flex justify-center">
               <img src={dfitsImage} alt="Dfits" className="h-40" />

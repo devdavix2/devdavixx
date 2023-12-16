@@ -1,7 +1,4 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   const handleHover = (e) => {
@@ -13,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <div id="home" className="w-full h-auto text-center mt-10 ">
+    <div id="home" className="w-full h-full text-center mt-5 lg:p-20 p-5 ">
       <div className=" w-full h-full mx-auto  flex justify-center items-center">
         <div>
           <h1 className="py-4 text-gray-200">

@@ -39,7 +39,7 @@ const Dfits = () => {
           />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="text-3xl md:text-6xl font-bold mb-4 ">
+            <h1 className="text-xl md:text-6xl font-bold mb-4 p-20 ">
               Dfits - Fitness Agency
             </h1>
           </div>

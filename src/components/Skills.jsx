@@ -13,9 +13,9 @@ const Skills = () => {
     <div
       id="skills"
       div
-      className="w-full mt-5 p-2 lg:px-20 flex items-center py-16"
+      className="w-full mt-5 p-20 lg:px-20 flex items-center py-16"
     >
-      <div className="max-w-[1240px] mx-auto flex-col justify-center h-full">
+      <div className="w-full p-10 mx-auto flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Skills
         </p>

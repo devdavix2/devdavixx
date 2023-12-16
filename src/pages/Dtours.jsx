@@ -9,7 +9,7 @@ import { FaWindowClose } from "react-icons/fa";
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // Optional: Adds smooth scrolling behavior
+    behavior: "smooth",
   });
 };
 
@@ -38,7 +38,7 @@ const Dtours = () => {
           />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="text-3xl md:text-6xl font-bold mb-4 ">
+            <h1 className="text-xl md:text-6xl font-bold mb-4 p-20 ">
               Dtours - Travel Agency
             </h1>
           </div>

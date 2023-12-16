@@ -32,7 +32,7 @@ const Navbar = () => {
     <nav className="p-4 px-10 lg:mx-4 lg:mt-4 lg:rounded-md relative">
       <div className="container mx-auto ">
         <div className="flex items-center justify-between">
-          <div className="text-white font-bold text-2xl uppercase cursor-pointer">
+          <div className="text-white font-bold text-xl uppercase cursor-pointer">
             <Link to="/">Devdavix</Link>
           </div>
 
@@ -72,6 +72,20 @@ const Navbar = () => {
                 onClick={() => navigate("#about")}
               >
                 About
+              </button>
+            </Link>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <button
+                className="hover:text-blue-600  transition-all cursor-pointer text-white py-2 px-4"
+                onClick={() => navigate("#about")}
+              >
+                Services
               </button>
             </Link>
             <Link
@@ -119,7 +133,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`md:hidden fixed top-0 right-0 h-full bg-gray-900 p-4 ${
+            className={`md:hidden fixed top-0 right-0 h-full bg-black p-4 ${
               isOpen ? "w-1/2" : "w-3/4"
             } rounded-tl-lg rounded-bl-lg transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
@@ -132,12 +146,18 @@ const Navbar = () => {
               >
                 <FiX />
               </button>
-              <div className="text-white font-bold text-sm uppercase p-4 pt-10">
-                <h1>Devdavix</h1>
+              <div className="text-white font-bold text-xl uppercase p-4 pt-10">
+                Devdavix
               </div>
-              <Link to="home" spy={true} smooth={true} duration={500}>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
+              >
                 <button
-                  className="hover:text-'text-[#5651e5]' transition-all cursor-pointer text-white py-2 px-4"
+                  className="transition-all cursor-pointer text-white py-2 px-4"
                   onClick={() => navigate("#home")}
                 >
                   Home
@@ -149,12 +169,28 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
               >
                 <button
-                  className="hover:text-'text-[#5651e5]' transition-all cursor-pointer text-white py-2 px-4"
+                  className=" transition-all cursor-pointer text-white py-2 px-4"
                   onClick={() => navigate("#about")}
                 >
                   About
+                </button>
+              </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
+              >
+                <button
+                  className="  transition-all cursor-pointer text-white py-2 px-4"
+                  onClick={() => navigate("#about")}
+                >
+                  Services
                 </button>
               </Link>
               <Link
@@ -163,6 +199,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
               >
                 <button
                   className="hover:text-'text-[#5651e5]' transition-all cursor-pointer text-white py-2 px-4"
@@ -177,6 +214,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
               >
                 <button
                   className="hover:text-'text-[#5651e5]' transition-all cursor-pointer text-white py-2 px-4"
@@ -191,6 +229,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                className=" hover:bg-blue-900 text-white cursor-pointer  rounded-md "
               >
                 <button
                   className="hover:text-'text-[#5651e5]'transition-all cursor-pointer text-white py-2 px-4"

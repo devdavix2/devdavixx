@@ -1,6 +1,5 @@
 import React from "react";
-import devdavixImg from "../assets/img/devdavix.jpg"; // Ensure correct path
-
+import devdavixImg from "../assets/img/devdavix.jpg"; 
 const About = () => {
   return (
     <div
