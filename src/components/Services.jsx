@@ -70,7 +70,7 @@ const Services = () => {
 
 const ServiceItem = ({ icon, title, description }) => {
   return (
-    <div className="w-full h-auto shadow-lg shadow-gray-800 rounded-xl flex flex-col  justify-center p-4 hover:scale-105 ease-in duration-300">
+    <div className="w-full h-auto shadow-lg shadow-gray-800 rounded-xl flex flex-col  justify-center m-4  p-4 hover:scale-105 ease-in duration-300">
       <div>{icon}</div>
       <h3 className="text-xl font-bold py-2">{title}</h3>
       <p className="text-gray-500">{description}</p>
