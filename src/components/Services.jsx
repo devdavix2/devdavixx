@@ -15,7 +15,7 @@ const Services = () => {
         </div>
 
         {/* First Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:p-auto p-20  gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:p-auto p-10  gap-8">
           {/* First Row Service Items */}
           <ServiceItem
             icon={<FiMonitor size={40} className="text-blue-500 mb-2" />}
