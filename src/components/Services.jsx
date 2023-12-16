@@ -36,7 +36,7 @@ const Services = () => {
         </div>
 
         {/* Second Row */}
-        <div className="grid grid-cols-1  md:grid-cols-3 lg:p-auto  gap-8">
+        <div className="grid grid-cols-1 mb-5  md:grid-cols-3 lg:p-auto  gap-8">
           {/* Second Row Service Items */}
           <ServiceItem
             icon={<FiLayout size={40} className="text-blue-500 mb-2" />}
