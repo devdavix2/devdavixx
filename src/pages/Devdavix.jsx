@@ -118,26 +118,27 @@ const Devdavix = () => {
           </Modal>
 
           <div className="flex flex-col mt-10 md:flex-row justify-around my-8">
-            <Link
-              to={{ pathname: "https://github.com/yourusername/dtour" }}
-              className="btn-primary mb-4 md:mb-0"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              onClick={() =>
+                window.open("https://github.com/devdavix2/devdavixx", "_blank")
+              }
+              className="btn-primary mb-4 md:mb-0 cursor-pointer"
             >
               <button className="bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
                 View Source Code
               </button>
-            </Link>
-            <Link
-              to={{ pathname: "https://dtour-demo.com" }}
-              className="btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
+            </div>
+
+            <div
+              onClick={() =>
+                window.open("https://devdavixx.vercel.app/", "_blank")
+              }
+              className="btn-primary cursor-pointer"
             >
               <button className="bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
                 View Project Demo
               </button>
-            </Link>
+            </div>
           </div>
         </div>
 
