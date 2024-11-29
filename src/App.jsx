@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Dtours from "./pages/Dtours";
 import Devdavix from "./pages/Devdavix";
 import Dfits from "./pages/Dfits";
+import Haven from "./pages/Haven";
+import Pawmatch from "./pages/Pawmatch";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/dtours" element={<Dtours />} />
           <Route path="/devdavix" element={<Devdavix />} />
           <Route path="/dfits" element={<Dfits />} />
+          <Route path="/haven" element={<Haven />} />
+          <Route path="/pawmatch" element={<Pawmatch />} />
         </Routes>
       </div>
     </Router>

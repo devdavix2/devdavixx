@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import dfitsImage from "../assets/images/dfits.png";
 import dtourImage from "../assets/images/dtours.png";
+import havenImage from "../assets/images/haven.png";
+import pawmatchImage from "../assets/images/pawmatch.png";
 import dfoodsImage from "../assets/images/devdavix.png";
 
 const scrollToTop = () => {
@@ -48,6 +50,36 @@ const Projects = () => {
               <h3>Dtour - Travel Agency </h3>
 
               <Link to="/dtours" className="block mt-2" onClick={scrollToTop}>
+                <button className="bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
+                  More Info...
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center shadow-lg shadow-gray-800  items-center mb-4 p-4 rounded-md lg:col-span-1 lg:gap-4">
+            <div className="mb-2 flex justify-center">
+              <img src={pawmatchImage} alt="Dtour" className="h-40" />
+            </div>
+            <div className="text-start">
+              <h3> Pawmatch - Pet Adoption Platform </h3>
+
+              <Link to="/pawmatch" className="block mt-2" onClick={scrollToTop}>
+                <button className="bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
+                  More Info...
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center shadow-lg shadow-gray-800  items-center mb-4 p-4 rounded-md lg:col-span-1 lg:gap-4">
+            <div className="mb-2 flex justify-center">
+              <img src={havenImage} alt="Dtour" className="h-40" />
+            </div>
+            <div className="text-start">
+              <h3> Haven - Real Estate Agency </h3>
+
+              <Link to="/haven" className="block mt-2" onClick={scrollToTop}>
                 <button className="bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
                   More Info...
                 </button>
