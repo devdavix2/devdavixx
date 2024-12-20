@@ -1,46 +1,82 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Dtours from "./pages/Dtours";
-import Devdavix from "./pages/Devdavix";
-import Dfits from "./pages/Dfits";
-import Haven from "./pages/Haven";
-import Pawmatch from "./pages/Pawmatch";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
+import HomePage from "./pages/HomePage";
+import CoursesPage from "./pages/CoursesPage";
+import PricingPage from "./pages/PricingPage";
+import AboutPage from "./pages/AboutPage";
+import LoginPage from "./pages/LoginPage";
+import CourseDetailPage from "./pages/CourseDetailPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import Layout from "./components/Layout";
 
-export default function App() {
+function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<MainLayout />} />
-          <Route path="/dtours" element={<Dtours />} />
-          <Route path="/devdavix" element={<Devdavix />} />
-          <Route path="/dfits" element={<Dfits />} />
-          <Route path="/haven" element={<Haven />} />
-          <Route path="/pawmatch" element={<Pawmatch />} />
-        </Routes>
-      </div>
+      <Routes>
+        {/* Wrap all pages with a common layout */}
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/courses"
+          element={
+            <Layout>
+              <CoursesPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/pricing"
+          element={
+            <Layout>
+              <PricingPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <AboutPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <Layout>
+              <LoginPage />
+            </Layout>
+          }
+        />
+
+        {/* Dynamic route for course details */}
+        <Route
+          path="/course-detail/:id"
+          element={
+            <Layout>
+              <CourseDetailPage />
+            </Layout>
+          }
+        />
+
+        {/* 404 Page */}
+        <Route
+          path="*"
+          element={
+            <Layout>
+              <NotFoundPage />
+            </Layout>
+          }
+        />
+      </Routes>
     </Router>
   );
 }
 
-function MainLayout() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Skills />
-      <Projects />
-      <Contact />
-      {/* Other components render directly without routes */}
-    </>
-  );
-}
+export default App;

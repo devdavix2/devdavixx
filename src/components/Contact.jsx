@@ -1,65 +1,160 @@
 import React from "react";
-
-import { FaSquareXTwitter } from "react-icons/fa6";
-
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
-import devdavixImg from "../assets/img/contact.jpg";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="w-full  p-5  mb-10 lg:px-20 flex items-center "
-    >
-      <div className="w-full  md:grid grid-cols-2 gap-8">
-        <div className="col-span-1">
-          <p className="uppercase text-xl mb-10 tracking-widest text-[#5651e5]">
-            Contact
-          </p>
-          <h2 className="py-4 text-2xl md:text-3xl font-bold">
-            Have any Questions ?
-          </h2>
-          <div className="lg:w-auto p-5 flex flex-col">
+    <section id="contact" className=" py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl  md:4xl font-bold text-blue-800 text-center mb-12">
+          Contact Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          {/* Contact Details */}
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-between">
             <div>
-              <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-              <p className="text-lg">
-                I'm excited to hear from you! Whether you have questions or want
-                to discuss a project, feel free to reach out.
+              <h3 className="text-2xl md:3xl font-bold text-blue-800 mb-6">
+                Get in Touch
+              </h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Have questions, feedback, or need assistance? We’re here to
+                help! Reach out to us through any of the methods below.
               </p>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3">
+                  <FaEnvelope className="text-blue-600 text-2xl" />
+                  <p className="text-gray-700 text-sm">
+                    Email:{" "}
+                    <a
+                      href="mailto:support@lingua.com"
+                      className="text-blue-600 hover:underline"
+                    >
+                      support@lingua.com
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FaPhoneAlt className="text-blue-600 text-2xl" />
+                  <p className="text-gray-700 text-sm">
+                    Phone: +234 800 123 4567
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FaMapMarkerAlt className="text-blue-600 text-2xl" />
+                  <p className="text-gray-700 text-sm">
+                    Address: 123 Language Lane, Lagos, Nigeria
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col gap-4 mt-10">
-              <a
-                href="https://twitter.com/devdavix"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
-              >
-                <FaSquareXTwitter className="text-4xl mr-2" />
-                <span>@devdavix</span>
-              </a>
-              <a
-                href="tel:+2347063583581"
-                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
-              >
-                <BsFillPersonLinesFill className="text-4xl mr-2" />
-                <span>+2347063583581</span>
-              </a>
-              <a
-                href="mailto:devdavixx@gmail.com"
-                className="hover:text-[#5651e5] transition-colors duration-300 flex items-center mt-4 lg:mt-0"
-              >
-                <AiOutlineMail className="text-4xl mr-2" />
-                <span>devdavixx@gmail.com</span>
-              </a>
+
+            {/* Social Media Links */}
+            <div className="mt-8">
+              <h4 className="text-lg font-semibold text-gray-800 mb-4">
+                Follow Us:
+              </h4>
+              <div className="flex space-x-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition text-2xl"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-600 transition text-2xl"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-600 hover:text-pink-800 transition text-2xl"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-white shadow-lg rounded-lg p-8 flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl md:3xl font-bold text-blue-800 mb-6">
+                Send Us a Message
+              </h3>
+              <form className="space-y-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Write your message"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition"
+                >
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
-        <div className="w-full h-full col-span-1 shadow-lg mt-10 rounded-xl flex items-center justify-center  hover:scale-105 ease-in duration-300">
-          <img className="rounded-xl" src={devdavixImg} alt="Devdavix" />
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
